@@ -44,13 +44,23 @@ namespace SomeQuizLikeApp
             if(count == (MAX - 1))
             {
                 btnSubmit.Enabled = false;
-                lblAnswerField.Text += "Done";
+                lblAnswerField.Text += "\nDone";
             }
             else
             {
                 btnSubmit.Enabled = true;
                 btnNextFlag.Enabled = true;
             }
+        }
+
+        private void btnNextFlag_Click(object sender, EventArgs e)
+        {
+            count++;
+            String filename = "Images\\" + country[count] + ".ico";
+            pictureBoxFlag.Image = Image.FromFile(filename);
+            btnNextFlag.Enabled = false;
+            btnSubmit.Enabled = true;
+            lblAnswerField.Text = "";
         }
     }
 }

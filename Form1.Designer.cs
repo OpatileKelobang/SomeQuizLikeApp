@@ -100,6 +100,7 @@
             this.btnNextFlag.TabIndex = 5;
             this.btnNextFlag.Text = "Next Flag";
             this.btnNextFlag.UseVisualStyleBackColor = true;
+            this.btnNextFlag.Click += new System.EventHandler(this.btnNextFlag_Click);
             // 
             // lblAnswerField
             // 
