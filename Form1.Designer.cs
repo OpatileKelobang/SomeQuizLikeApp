@@ -46,7 +46,6 @@
             this.pictureBoxFlag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFlag.TabIndex = 0;
             this.pictureBoxFlag.TabStop = false;
-            this.pictureBoxFlag.Click += new System.EventHandler(this.pictureBoxFlag_Click);
             // 
             // lblPictureBox
             // 
@@ -91,6 +90,7 @@
             this.btnSubmit.TabIndex = 4;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnNextFlag
             // 
@@ -124,6 +124,7 @@
             this.Controls.Add(this.pictureBoxFlag);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFlag)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
