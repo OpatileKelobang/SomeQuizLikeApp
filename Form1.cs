@@ -16,5 +16,10 @@ namespace SomeQuizLikeApp
         {
             InitializeComponent();
         }
+
+        private void pictureBoxFlag_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
